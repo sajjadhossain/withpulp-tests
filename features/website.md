@@ -25,6 +25,6 @@
 	So that we can subscribe them to our newsletter.
 
 ## Tests
-	* [Home Page Tests](test/specs/website/home.spec.js)
-	* [Subscription Tests](test/specs/website/subscribe.spec.js)
-	* [Blog Tests](test/specs/website/blog.spec.js)
+* [Home Page Tests](test/specs/website/home.spec.js)
+* [Subscription Tests](test/specs/website/subscribe.spec.js)
+* [Blog Tests](test/specs/website/blog.spec.js)
