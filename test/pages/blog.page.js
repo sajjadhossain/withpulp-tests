@@ -23,19 +23,19 @@ var BlogPage = Object.create(Page, {
   // Posts featured
   featuredPosts:  {
     get: function () {
-      return browser.elements('ul[data-reactid="182"] > li');
+      return browser.elements('#___gatsby > section > main > header > section > figure > ul > li');
     }
   },
   // Post content
   postContent:  {
     get: function () {
-      return browser.isVisible('#democratizing_ai_power > article');
+      return browser.isVisible('#covhouse > section:nth-child(2)');
     }
   },
   // Post footer
   postFooter:  {
     get: function () {
-      return browser.isExisting('footer > figure.next.figure');
+      return browser.isExisting('#___gatsby > section > footer');
     }
   }
 });

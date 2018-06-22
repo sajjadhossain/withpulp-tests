@@ -6,8 +6,6 @@ describe('Newsletter', function() {
     var randomNumber = Math.random();
     var testEmail = 'sajjad+' + randomNumber + '@withpulp.com';
     SubscribePage.open('/');
-    // Verify there is a newsletter section
-    expect(SubscribePage.newsletterSection).to.equals(true);
     // Provide test email
     SubscribePage.fillInSubscribeInput(testEmail);
     // Verify that the input and output match

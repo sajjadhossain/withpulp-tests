@@ -14,16 +14,10 @@ var SubscribePage = Object.create(Page, {
       return browser.element('div=WP');
     }
   },
-  // Newsletter Section
-  newsletterSection:  {
-    get: function () {
-      return browser.isVisible('section[data-reactid="220"]');
-    }
-  },
   // Newsletter input
   subscribeInput:  {
     get: function () {
-      return browser.element('#mce-EMAIL');
+      return browser.element('input[type="email"]');
     }
   },
   // Fill in input with passed value
@@ -41,7 +35,7 @@ var SubscribePage = Object.create(Page, {
   // Submit input
   submitButton:  {
     get: function () {
-      return browser.elements('#mc-embedded-subscribe');
+      return browser.elements('#___gatsby > section > main > footer > section.wrapper-gsYTop.bBFHOH > figure > div:nth-child(2) > form > div > button');
     }
   },
   submit: {

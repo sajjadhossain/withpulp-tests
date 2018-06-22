@@ -2,21 +2,16 @@ var expect = require('chai').expect;
 var BlogPage = require('../../pages/blog.page');
 
 describe('Blog', function() {
-  it('3 stories are featured in the home page', function() {
+  it('2 studies are featured in the home page', function() {
     BlogPage.open('/');
-    // Verify there are 3 featured posts.
-    expect(BlogPage.featuredPosts.value.length).to.equals(3);
+    // Verify there are 2 featured posts.
+    expect(BlogPage.featuredPosts.value.length).to.equals(2);
   });
   it('Shares a story with the user in a blog post', function() {
-    BlogPage.open('/blog/democratizing_ai_power/');
+    BlogPage.open('/work/covenant-house');
     // Verify that post loads the expected content
-    expect(BlogPage.pageTitle()).to.equals('With Pulp | Digital Product Studio | Democratizing AI Power');
+    expect(BlogPage.pageTitle()).to.equals('With Pulp | A Socially Responsible Digital Studio');
     // Verify that post loads content
     expect(BlogPage.postContent).to.equals(true);
-  });
-  it('Links related posts in the footer', function() {
-    BlogPage.open('/blog/democratizing_ai_power/');
-    // Verify that post loads related link
-    expect(BlogPage.postFooter).to.equals(true);
   });
 });
